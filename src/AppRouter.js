@@ -4,6 +4,8 @@ import HomePage from "./HomePage";
 import NavBar from "./NavBar";
 import NotFound from "./NotFound";
 import SecondComponent from "./SecondComponent";
+import User from "./User";
+import Users from "./Users";
 
 const AppRouter = () => {
   return (
@@ -13,6 +15,8 @@ const AppRouter = () => {
         <Route  path="myfirstcomponent" element={<FirstComponent />} />
         <Route exact path="secondcomponent" element={<SecondComponent />} />
         <Route  path="/" element={<HomePage />} />
+        <Route path='users' element={<Users />} />
+        <Route path='user/:userId' element={<User />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </>

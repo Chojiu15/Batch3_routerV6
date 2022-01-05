@@ -1,4 +1,5 @@
 import {Link, NavLink} from 'react-router-dom'
+import GoBack from './GoBack'
 
 
 
@@ -9,11 +10,11 @@ const NavBar = () => {
         <NavLink
          to="/secondcomponent"
          style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}
-       >
+        >
          Second component
        </NavLink>
         <Link to='/'>Home</Link>
-
+        <Link to='/users'>Users</Link>
         </nav>
     )
 }
