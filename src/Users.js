@@ -21,7 +21,7 @@ const Users =() => {
             {users.map(user => {
                 return(
                     <>
-                        <Link to={`/user/${user.id}`} ><h1>{user.name}</h1></Link>
+                        <Link to={`/user/${user.id}`}><h1>{user.name}</h1></Link>
                         <p>{user.id}</p>
                     </>
                 )

@@ -6,6 +6,7 @@ import NotFound from "./NotFound";
 import SecondComponent from "./SecondComponent";
 import User from "./User";
 import Users from "./Users";
+import Maps from './Maps'
 
 const AppRouter = () => {
   return (
@@ -14,13 +15,16 @@ const AppRouter = () => {
       <Routes>
         <Route  path="myfirstcomponent" element={<FirstComponent />} />
         <Route exact path="secondcomponent" element={<SecondComponent />} />
-        <Route  path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path='users' element={<Users />} />
         <Route path='user/:userId' element={<User />} />
+        <Route path='maps' element={<Maps />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </>
   );
 };
+
+
 
 export default AppRouter;
