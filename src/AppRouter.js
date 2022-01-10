@@ -13,7 +13,7 @@ const AppRouter = () => {
     <>
       <NavBar />
       <Routes>
-        <Route  path="myfirstcomponent" element={<FirstComponent />} />
+        <Route path="myfirstcomponent" element={<FirstComponent />} />
         <Route exact path="secondcomponent" element={<SecondComponent />} />
         <Route path="/" element={<HomePage />} />
         <Route path='users' element={<Users />} />

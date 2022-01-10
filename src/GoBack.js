@@ -4,7 +4,7 @@ const GoBack = () => {
  const navigate = useNavigate();
 
  const handleClick = () => {
-   navigate(-2);
+   navigate('/');
  };
  
  return (
